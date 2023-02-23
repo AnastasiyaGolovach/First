@@ -1,18 +1,16 @@
 #include <iostream>
 #include <vector>
-#include <locale.h>
+
 using namespace std;
 
 int main()
-
 {
-    setlocale(LC_ALL, "Russian");
     int n, m;
     cout << "Введите число с которым сравниваем ";
     cin >> n;
-    cout << "Введите число  ";
     for (int i = 0; i < n; ++i) {
-        string s;  int sum = 0;
+        cout << "Введите число";
+        string s; int sum = 0;
         cin >> m;
         if (m == 1) {
             cout << -1;
