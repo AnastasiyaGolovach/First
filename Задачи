@@ -1,0 +1,27 @@
+#include <iostream>
+#include <vector>
+#include <locale.h>
+using namespace std;
+
+int main()
+
+{
+    setlocale(LC_ALL, "Russian");
+    int n, s;
+    cout << "Введите число с которым сравниваем ";
+    cin >> n;
+    cout << "Введите число  ";
+    for (int i = 0; i < n; ++i) {
+        cin >> s ;
+        if (s == 1) {
+            cout << -1;
+        }
+        else {
+            cout << 2;
+            for (int j = 0; j < s - 1; ++j)
+                cout << 3;
+        }
+        cout << endl;
+    }
+    return 0;
+}
